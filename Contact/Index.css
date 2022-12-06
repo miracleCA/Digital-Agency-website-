@@ -1,0 +1,471 @@
+@font-face {
+        font-family: Aladin;
+        src: url(Fonts/Aladin/Aladin-Regular.ttf);
+}
+@font-face {
+        font-family: Andada;
+        src: url(Fonts/Andada_Pro/static/AndadaPro-Regular.ttf);
+}
+@font-face {
+        font-family: Source_Serif;
+        src: url(Fonts/SourceSerif/static/SourceSerif4-VariableFont_opsz.ttf);
+}
+html,body {
+        overflow-x:hidden;
+}
+#myBtn{
+        position: fixed;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+        right: 30px;
+        font-size: 30px;
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: rgb(12, 12, 100);
+        position: fixed;
+        z-index: 1;
+        display: none;
+        
+}
+#myBtn:hover {
+        background-color: white;
+        border: 2px solid rgb(12, 12, 100);
+        color: rgb(12, 12, 100);
+        transform: scale(1.1);
+}
+.header{
+        background-image: url("IMG/pexels-tima-miroshnichenko-5685821\ \(1\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 650px;
+        width: 100%;
+}
+.header nav{
+        position: fixed; 
+        width: inherit; 
+        background-color: transparent; 
+        z-index: 999; 
+        border: none;
+}
+.navbar-toggle {
+        border: 2px solid #1e1c87;
+}
+.icon-bar {
+        background-color: #1d1ec9;
+}
+li a{
+        font-family: aladin;
+        font-size: 20px;
+}
+li a:active{
+        border: 1px solid rgb(10, 10, 75);
+}
+#active{
+        border: 2px solid rgb(10, 10, 75); 
+}
+li a:hover{
+        font-size: 23px;
+}
+#dropdown-menu{
+        background-color: rgb(5, 5, 60);
+}
+.dropdown-toggle {
+        background-color: transparent;
+        color: white;
+        border: none;
+}
+.dropdown {
+        position: absolute;
+        display: block;
+}
+.dropdown:active .dropdown-toggle:active{
+        background-color: transparent;
+}
+.navbar-nav .dropdown-item{
+        color: white;
+}  
+.navbar-nav .dropdown-item:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(5, 5, 60);
+        border: white;
+}
+.dropdown:hover .dropdown-menu {
+        display: block;
+}
+.dropdown:target .dropdown-menu{
+        display: none;
+}  
+.dropdown:hover .dropdown-toggle {
+        background-color: transparent;
+}
+.dropdown-menu a:hover{
+        font-size: 23px;
+        background-color: transparent;
+}
+#header-space{
+        height: 220px;
+}
+@media screen and (min-width: 481px) {
+        #dropdown-menu{
+                width: fit-content;
+                left: 0;
+        }
+}
+@media screen and (max-width: 481px) {
+        #myBtn{
+                right: 10px;
+                font-size: 20px;
+                bottom: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+        }
+        .header{
+                background-size: cover;
+                background-position: center;
+                height: initial;
+        }
+        li a:active{
+                border: 1px solid rgb(255, 255, 255);
+        }
+        #active{
+                border: 2px solid rgb(255, 255, 255); 
+        }
+        .navbar-collapse{
+                background-color: rgb(5, 5, 60); 
+                border: none;
+        }
+        #dropdown-menu{
+                position: sticky;
+                width: 100%;
+                padding-left: 5px;
+        }
+        .dropdown ul{
+                background-color: transparent;
+                border: none;
+        }
+        .navbar-nav{
+                display: grid;
+        }
+        #header-space{
+                height: 100px;
+        }
+}
+#header-space{
+        height: 100px;
+}
+#header-items1{
+        padding-left: 40px;
+        padding-top: 100px;
+        width: 500px;
+}
+#caption{
+        font-family: aladin;
+        color: white;
+        font-size: 55px;
+}
+#header-cap p{
+        color: white;
+        font-family: aladin;
+        font-size: 17px;
+}
+#body-row{
+        height: fit-content;
+        font-family: aladin;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+#header-cap #P1{
+                color: white;
+                font-family: aladin;
+                font-size: 25px;
+                line-height: 25px;
+}
+#header-cap #caption{
+                font-size: 45px;
+                line-height: 50px;
+                padding-top: 10px;
+}
+#header-cap #P1{
+                color: white;
+                font-family: aladin;
+                font-size: 25px;
+                line-height: 25px;
+}
+@media screen and (max-width: 481px) {
+        .header{
+                background-size: cover;
+                background-position: center;
+                height: 430px;
+        }
+        #header-items{
+                text-align: center;
+                margin: 0px;
+                padding-top: 0px;
+        }
+        #body-row{
+                padding-left: 2px;
+                padding-right: 25px;
+        }
+        #header-cap #P1{
+                color: white;
+                font-family: aladin;
+                font-size: 25px;
+                line-height: 25px;
+        }
+        #header-cap #caption{
+                font-size: 45px;
+                text-align: center;
+                line-height: 50px;
+                padding-top: 10px;
+        }
+        #header-items1{
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                width: inherit;
+        }
+}
+#body-row #mail{
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 20px;
+        font-weight: 100;
+        vertical-align: middle;
+}
+#Follow-text{
+        font-size: 35px;
+        padding-left: 20px;
+}
+#fol-soc {
+        text-align: start;
+        padding-left: 20px;
+}
+#fol-soc .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px;
+        border-radius: 20px;
+}
+#fol-soc .fa:hover{ 
+        transform: scale(1.1);
+}
+#fol-soc .fa-facebook {
+        background: rgb(21, 39, 170);
+        color: white;
+}
+#fol-soc .fa-twitter {
+        background: rgb(247, 244, 244);
+        color: rgb(58, 104, 204);
+}
+#fol-soc .fa-linkedin {
+        background: rgb(30, 77, 181);
+        color: white;
+}
+#fol-soc .fa-youtube {
+        background:rgb(214, 27, 27);
+        color: #ffffff;
+}
+#fol-soc .fa-instagram {
+        background: rgb(196, 16, 145);
+        color: #ffffff;
+}
+#fol-soc .fa-pinterest {
+        background: rgb(181, 12, 12);
+        color: #ffffff;
+}
+@media screen and (max-width: 1020px) {
+        #body-row #con-text{
+                font-size: 28px;
+        }
+}
+@media screen and (max-width: 1000px) {
+        #body-row #mail{
+                font-size: 16px;
+        }
+        #body-row #con-text{
+                font-size: 21px;
+                font-weight: 550;
+        }
+        #Follow-text{
+                font-size: 27px;
+        }
+        #fol-soc .fa {
+                font-size: 10px;
+                width: 30px;
+        }
+}
+@media screen and (max-width:  500px) {
+        #body-row{
+                padding-left: 5px;
+                padding-right: 5px;
+        }
+        #body-row #con-text{
+                font-size: 23px;
+        }
+        #Follow-text{
+                font-size: 28px;
+        }
+        #fol-soc .fa {
+                font-size: 12px;
+                width: 33px;
+        }
+}
+input[type=text] {
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0;
+        border: 2px rgb(8, 8, 79) solid;
+        color: black;
+}
+input[type=number] {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+        border: 2px rgb(8, 8, 79) solid;
+        color: black;
+}
+input [type=file] {
+        border: none;
+        outline: none;
+}
+#myFile{
+        color: rgb(45, 32, 158);
+        padding-top: 15px;
+}
+#myFile:enabled{
+        border: none;
+        outline: none;
+}
+.button {
+        margin: 10px 0;
+        border: none;
+        color: white;
+        background-color: rgb(11, 11, 99);
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+}
+.button:hover {
+        background-color: #ffffff;
+        color: rgb(11, 11, 99);
+        border: rgb(11, 11, 99) 1px solid;
+}
+::placeholder{
+        font-size: 20px;
+}
+#footer-row{
+        background-color: #080E50;
+        color: white;
+        font-family: aladin;
+        padding: 10px;
+        border-bottom: 1px solid black;
+}
+#foot-col{
+        height: 180px;
+        background-color: #080E50;
+        }
+#foot-col li{
+        padding-top: 5px;
+}
+.fa {
+        padding: 8px;
+        font-size: 15px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+}
+@media screen and (max-width: 1000px) {
+        #foot-col{
+                width: 25%;
+        }
+        .fa {
+                padding: 7px;
+                font-size: 5px;
+                width: 25px;
+        }
+}
+@media screen and (max-width: 800px) {
+        #foot-col{
+                width: 100%;
+        }
+}
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      
+      .fa-instagram {
+        background: #ffffff;
+        color: #B90FA3;
+      }
+      
+      .fa-pinterest {
+        background: #cb2027;
+        color: white;
+}
+#Sub-Email{
+        color: black;
+}
+#Sub-Email::placeholder{
+        color: black;
+        font-family: aladin;
+        font-size: 17px;
+}
+#Sub-Email:active{
+        border: 1px solid rgb(255, 255, 255);
+}
+#mail-but{
+        width: 70px; 
+        border: 1px solid white; 
+        color: white; 
+        text-align: center; 
+        font-size: 17px; 
+        font-family: aladin; 
+        background-color: rgb(12, 12, 100); 
+        border-bottom-right-radius: 10px; 
+        border-top-right-radius: 10px; 
+        font-weight: bold;
+}
+#mail-but:hover{
+        background-color: white;
+        color: rgb(12, 12, 100);
+        border: 1px solid rgb(12, 12, 100);
+}
+#last-foot{
+        background-color: #080E50;
+        padding-left: 20px; 
+        padding-right: 20px; 
+        text-align: center;
+        font-family: aladin;
+        font-size: 15px;
+        color: white;
+        padding: 5px;
+}
